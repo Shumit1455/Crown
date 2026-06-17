@@ -94,6 +94,18 @@ fun HomeScreen(navController: NavController) {
                     Text("Profile")
                 }
             }
+
+            Button(
+                onClick = { navController.navigate("joke_generator") },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(48.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.tertiary
+                )
+            ) {
+                Text("🤣 Random Jokes")
+            }
         }
     }
 }

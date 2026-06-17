@@ -8,6 +8,7 @@ import com.crown.nutrition.presentation.screens.HomeScreen
 import com.crown.nutrition.presentation.screens.AddFoodScreen
 import com.crown.nutrition.presentation.screens.DailyChartScreen
 import com.crown.nutrition.presentation.screens.ProfileScreen
+import com.crown.nutrition.presentation.screens.JokeGeneratorScreen
 
 @Composable
 fun CrownNavGraph() {
@@ -28,6 +29,9 @@ fun CrownNavGraph() {
         }
         composable("profile") {
             ProfileScreen(navController)
+        }
+        composable("joke_generator") {
+            JokeGeneratorScreen(navController)
         }
     }
 }
